@@ -11,20 +11,28 @@
 
 <body>
 
-  <body>
-    <h1 class="title">Encriptador</h1>
-    <div class="container">
-      <textarea id="normal" placeholder="Normal" oninput="handleNormalInput()"></textarea>
-      <div class="button_container">
-        <button class="btn" onclick="handleClick()" disabled></button>
-        <div id="error_message"></div>
-      </div>
-      <textarea id="encriptado" placeholder="Encriptado" oninput="handleEncryptedInput()"></textarea>
+
+  <h1 class="title">Encriptador</h1>
+  <div class="container">
+
+    <div class="text_container">
+      <textarea id="normal" placeholder="Normal" oninput="handleNormalInput();"></textarea>
+      <button id="copy_normal_btn" onclick="handleClickCopyNormal();">Copy</button>
     </div>
-  </body>
 
+    <div class="button_container">
+      <button class="btn" onclick="handleClick();" disabled></button>
+      <div id="error_message"></div>
+    </div>
 
-  <script src="app2.js"></script>
+    <div class="text_container">
+      <textarea id="encriptado" placeholder="Encriptado" oninput="handleEncryptedInput();"></textarea>
+      <button id="copy_encrypted_btn" onclick="handleClickCopyEncrypted();">Copy</button>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
