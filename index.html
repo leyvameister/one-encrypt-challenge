@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <body>
+    <h1 class="title">Encriptador</h1>
+    <div class="container">
+      <textarea id="normal" placeholder="Normal" oninput="handleNormalInput()"></textarea>
+      <div class="button_container">
+        <button class="btn" onclick="handleClick()" disabled></button>
+        <div id="error_message"></div>
+      </div>
+      <textarea id="encriptado" placeholder="Encriptado" oninput="handleEncryptedInput()"></textarea>
+    </div>
+  </body>
+
+
+  <script src="app2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.title {
+    text-align: center;
+    margin: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+textarea {
+    padding: 35px;
+    width: 30%;
+    height: 200px;
+    margin: 50px;
+    border-radius: 10px;
+    resize: none;
+    background-color: #e9e9e9;
+    text-align: center;
+    outline: none;
+}
+
+.button_container {
+    width: 70px;
+    align-self: center;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 50px;
+    border: none;
+    background-color: white;
+}
+
+
+.btn:disabled {
+    cursor: auto;
+}
